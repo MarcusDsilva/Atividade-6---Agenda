@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/amarelhinha">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginLeft="210dp"
+        android:background="@color/laranja"
+        android:text="Sistema de cadastro!"
+        android:textSize="35dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/imagem"
+        android:layout_width="209dp"
+        android:layout_height="100dp"
+        android:src="@drawable/images"
+        />
+
+    <TextView
+        android:id="@+id/desculpas"
+        android:layout_below="@+id/imagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem vindo ao sistema de cadastro.
+Esse é um pequeno sofware de cadastro de usuarios. Escolha uma das opções abaixo."
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+    />
+
+    <Button
+        android:id="@+id/btncadastro"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desculpas"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:text="Cadastro de usuario" />
+
+    <Button
+        android:id="@+id/btnlistar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btncadastro"
+        android:layout_marginLeft="50dp"
+        android:text="Listar usuarios cadastrados" />
+
+</RelativeLayout>

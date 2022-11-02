@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azulzinha"
+    >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="listagem de usuario!"
+        android:layout_marginLeft="210dp"
+        android:textSize="35dp"
+        android:background="@color/laranja"
+
+        />
+
+    <ImageView
+        android:id="@+id/imagem"
+        android:layout_width="209dp"
+        android:layout_height="100dp"
+        android:src="@drawable/images"
+        />
+
+    <TextView
+        android:id="@+id/prencha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagem"
+        android:layout_marginTop="20dp"
+        android:text="Registro: 1/10"
+        android:textSize="30dp" />
+
+    ///////////////////////NOME////////////////////////////////////
+    <TextView
+        android:id="@+id/txtnome"
+        android:layout_below="@+id/prencha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textSize="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/edtnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtnome"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:hint="[NOME]"
+        android:textColorHint="@color/laranja"
+        android:textSize="25dp"
+
+        />
+
+    ///////////////////ENDEREÇO////////////////////////////////////
+    <TextView
+        android:id="@+id/txtendeço"
+        android:layout_below="@+id/edtnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endereço"
+        android:textSize="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/edtendereço"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtendeço"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:hint="ENDEREÇO"
+        android:textColorHint="@color/laranja"
+        android:textSize="25dp" />
+
+    ///////////////////TELEFONE////////////////////////////////////
+
+    <TextView
+        android:id="@+id/txttelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtendereço"
+        android:layout_marginTop="25dp"
+        android:text="Endereço"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/edttelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txttelefone"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:hint="TELEFONE"
+        android:textColorHint="@color/laranja"
+        android:textSize="25dp" />
+
+
+    //////////////////BOTOES////////////////////
+
+    <Button
+        android:id="@+id/btnlistar"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edttelefone"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:text="listar" />
+
+    <Button
+        android:id="@+id/btnPrin"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlistar"
+        android:layout_marginLeft="50dp"
+        android:text="Voltar para tela principal" />
+
+    <Button
+        android:id="@+id/btnlis"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPrin"
+        android:layout_marginLeft="50dp"
+        android:text="tela usuarios cadastrados" />
+
+</RelativeLayout>
